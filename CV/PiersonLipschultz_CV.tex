@@ -1,0 +1,200 @@
+
+% Ethan's Résumé Template
+% Author: necusjz
+% License: CC-BY-4.0
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{etoolbox}
+\usepackage{tikz}
+\usepackage{bookmark}
+\input{glyphtounicode}
+
+% font options
+\usepackage{newpxtext}
+\linespread{1.05}  % palladio needs more leading (space between lines)
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\cvitem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]\justifying}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\cvskill}[2]{
+  \textcolor{black}{\textbf{#1}}\hfill
+  \foreach \x in {1,...,5}{%
+    \space{\ifnumgreater{\x}{#2}{\color{black!80!white!20}}{\color{black}}\faSquare}}\par%
+  \vspace{-2pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+\begin{document}
+
+% contact information
+\begin{center}
+  \textbf{\LARGE\scshape Pierson Lipschultz} \\
+  \vspace{1pt}\small
+  \href{mailto:}{Piersonlipschultz@gmail.com}
+  $\ \diamond\ $
+  \href{https://www.piersonl.com/}{https://www.piersonl.com/}
+  $\ \diamond\ $ 
+  312-292-7673
+  $\ \diamond\ $
+  \href{https://github.com/PiersonLip}{GitHub}
+  % $\ \diamond\ $
+  % \href{https://www.linkedin.com/}{LinkedIn}
+\end{center}
+
+\section{Research Experience}
+\cvheadingstart
+  \cvheading
+    {College of DuPage}{Glen Ellyn, IL}
+    {Honors Independent Study $\ \diamond\ $ \href{https://github.com/PiersonLip/Honors-Independent-Study}{GitHub}}{01/2025 - 5/2025}
+  \cvitemstart
+    \cvitem{Wrote a paper on mass transfer in binary stars}
+    \cvitem{Analyzed three observed systems}
+    \cvitem{Wrote a ~30 page paper in \LaTeX}
+  \cvitemend
+
+  \cvheading
+    {CIERA, Northwestern University}{Evanston, IL}
+    {REACH Further $\ \diamond\ $ \href{https://piersonlip.github.io/XB/}{GitHub} $\ \diamond\ $ \href{https://youtube.com/playlist?list=PLq73rWo79HTuEUPYdUz11PpY6DLhuF9Wl\&si=VjHikj-V-IePgofn}{Visualizaions}}{06/2024 - 07/2024}
+
+  \cvitemstart
+    \cvitem{Worked with mentor Ilia Kiato assisting with research}
+    \cvitem{Project one: Researched and cataloged X-ray binary simulation data using python tools.}
+    \cvitem{Developed a system for analyzing subpopulations using Bokeh and a GitHub Site.}
+    \cvitem{Project two: Researched natal kick velocities in Black Holes, recreating the results of the paper A Black Hole Kicked At Birth: MAXI J1305-704.}
+    \cvitem{Created visualizations of the processes of the paper.}
+  \cvitemend
+
+%   \cvheading
+%     {Company}{City, State}
+%     {Title}{12/2018 - 06/2019}
+%   \cvitemstart
+%     \cvitem{Description}
+%   \cvitemend
+
+\cvheadingend
+
+\section{Education}
+\cvheadingstart
+  \cvheading
+    {College of DuPage}{Glen Ellyn, IL}
+    {Honors Scholar}{08/2024 - 5/2025}
+  % \cvheading
+  %   {School}{City, State}
+  %   {Degree, Field}{09/2010 - 07/2014}
+\cvheadingend
+
+\section{Research Skills}
+\cvskill{Blender}{5}
+\cvskill{\LaTeX}{4}
+\cvskill{Python}{4}
+\cvskill{Pandas}{4}
+\cvskill{Matplotlib}{4}
+\vspace{-5pt}
+
+\section{Outreach}
+
+\cvheadingstart
+  \cvheading
+    {Lead Ambassador, \textit{Stories of Space}}{Glen Ellyn, IL}
+    {\href{https://www.storiesofspace.com/}{https://www.storiesofspace.com/}}{01/2025 - current}
+    \cvitemstart
+    \cvitem{Helping coordinate large scale collaborations}
+    \cvitem{Marketed and encouraged college student engagement with space.}
+    \cvitem{Currently in charge of Mission 4}
+    \cvitemend
+
+  \cvheading
+    {Project Head, \textit{High Altitude Weather Balloon Collaboration}}{Glen Ellyn, IL}
+    {\href{https://sites.google.com/view/stories-of-space-project/}{https://sites.google.com/view/stories-of-space-project/}}{01/2025 - current}
+    \cvitemstart
+    \cvitem{Helping coordinate large scale collaborations}
+    \cvitem{Marketed and encouraged college student engagement with space.}
+    \cvitem{Currently working in charge of Mission 4}
+    \cvitemend
+
+  \cvheading
+    {Guest Speaker, \textit{Northwest Suburban Astronomers}}{Glen Ellyn, IL}
+    {\href{https://www.nsaclub.org/}{https://www.nsaclub.org/}}{February 7th, 2025}
+    \cvitemstart
+    \cvitem{Presented an overview of binary star properties, including X-Ray binaries, mass transfer, and stellar evolution}
+    \cvitem{Audience of $\approx$ 50 people.}
+    \cvitemend
+  % \cvheading
+  %   {School}{City, State}
+  %   {Degree, Field}{09/2010 - 07/2014}
+\cvheadingend
+
+
+\section{Misc.}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{Licenses \& certifications}
+  \cvitem{Volunteering}
+  \cvitem{\href{https://arxiv.org/}{Publications}}
+  \cvitem{\href{https://patents.google.com/}{Patents}}
+\cvitemend
+\cvheadingend
+
+\end{document}
