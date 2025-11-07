@@ -1,4 +1,3 @@
-
 % Ethan's Résumé Template
 % Author: necusjz
 % License: CC-BY-4.0
@@ -25,11 +24,11 @@
 
 % font options
 \usepackage{newpxtext}
-\linespread{1.05}  % palladio needs more leading (space between lines)
+\linespread{1.05}
 \usepackage[T1]{fontenc}
 
 \pagestyle{fancy}
-\fancyhf{}  % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -53,14 +52,12 @@
   \vspace{-2pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
 
-% ensure that generate pdf is machine readable/ATS parsable
+% ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
 % custom commands
 \newcommand{\cvitem}[1]{
-  \item\small{
-    {#1\vspace{-2pt}}
-  }
+  \item\small{{#1\vspace{-2pt}}}
 }
 
 \newcommand{\cvheading}[4]{
@@ -95,62 +92,47 @@
   \href{mailto:}{Piersonlipschultz@gmail.com}
   $\ \diamond\ $
   \href{https://www.piersonl.com/}{https://www.piersonl.com/}
-  $\ \diamond\ $ 
+  $\ \diamond\ $
   312-292-7673
   $\ \diamond\ $
   \href{https://github.com/PiersonLip}{GitHub} \\
-  \small{Astronomy + Datascience}
-  % $\ \diamond\ $
-  % \href{https://www.linkedin.com/}{LinkedIn}
+  \small{Astronomy + Data Science}
 \end{center}
 
 \section{Research Experience}
 \cvheadingstart
   \cvheading
     {College of DuPage}{Glen Ellyn, IL}
-    {Honors Independent Study $\ \diamond\ $ \href{https://github.com/PiersonLip/Honors-Independent-Study}{GitHub} $\diamond$ \href{https://dc.cod.edu/srs/2025/schedule/25/}{Publication}}{1/2025 - 5/2025}
+    {Honors Independent Study $\ \diamond\ $ \href{https://github.com/PiersonLip/Honors-Independent-Study}{GitHub} $\diamond$ \href{https://dc.cod.edu/srs/2025/schedule/25/}{Publication}}{January 2025 -- May 2025}
   \cvitemstart
-    \cvitem{Wrote a paper discussing the processes of mass transfer in binary stars}
-    \cvitem{Combined observational and simulated data}
-    \cvitem{Used Python to compare a dataset of a million simulated binaries with their observed counterparts}
-    \cvitem{Utilized \LaTeX to allow for greater efficiency}
-    \cvitem{Published in the Digital Commons}
+    \cvitem{Authored a paper on mass transfer in binary stars; published in the COD Digital Commons.}
+    \cvitem{Integrated observational and simulated datasets to cross-validate trends in binary evolution.}
+    \cvitem{Built Python pipelines to compare \textasciitilde1{,}000{,}000 simulated binaries with observed counterparts.}
+    \cvitem{Automated typesetting workflows in \LaTeX{} to streamline figure and table generation.}
   \cvitemend
 
   \cvheading
     {CIERA, Northwestern University}{Evanston, IL}
-    {REACH Further $\ \diamond\ $ \href{https://piersonlip.github.io/XB/}{GitHub} $\ \diamond\ $ \href{https://youtube.com/playlist?list=PLq73rWo79HTuEUPYdUz11PpY6DLhuF9Wl\&si=VjHikj-V-IePgofn}{Visualizations}}{6/2024 - 7/2024}
+    {REACH Further $\ \diamond\ $ \href{https://piersonlip.github.io/XB/}{GitHub} $\ \diamond\ $ \href{https://youtube.com/playlist?list=PLq73rWo79HTuEUPYdUz11PpY6DLhuF9Wl\&si=VjHikj-V-IePgofn}{Visualizations}}{June 2024 -- July 2024}
 
   \cvitemstart
-    \cvitem{Worked with mentor Ilia Kiato assisting with research}
-    \cvitem{Project one: Researched and cataloged X-ray binary simulation data using python tools.}
-    \cvitem{Developed a system for analyzing subpopulations using Bokeh and a GitHub Site.}
-    \cvitem{Project two: Researched natal kick velocities in Black Holes, recreating the results of the paper A Black Hole Kicked At Birth: MAXI J1305-704.}
-    \cvitem{Created visualizations of the processes of the paper.}
+    \cvitem{Collaborated with mentor Ilia Kiato on X-ray binary research.}
+    \cvitem{Cataloged simulation datasets using Python analysis tools.}
+    \cvitem{Developed Bokeh dashboards and a GitHub Pages site to analyze subpopulations.}
+    \cvitem{Reproduced natal-kick velocity results for MAXI J1305-704.}
+    \cvitem{Created explanatory visualizations of paper methods and results.}
   \cvitemend
-
-%   \cvheading
-%     {Company}{City, State}
-%     {Title}{12/2018 - 06/2019}
-%   \cvitemstart
-%     \cvitem{Description}
-%   \cvitemend
-
 \cvheadingend
 
 \section{Education}
 \cvheadingstart
   \cvheading
-    {University of Urbana-Champaign}{Urbana-Champaign, IL}
-    {Astronomy + Datascience}{5/2025 - Current}
+    {University of Illinois Urbana--Champaign}{Urbana--Champaign, IL}
+    {Bachelor of Science in Astronomy \& Data Science}{Expected May 2028}
 
   \cvheading
     {College of DuPage}{Glen Ellyn, IL}
-    {Honors Scholar}{8/2024 - 5/2025}
-
-  % \cvheading
-  %   {School}{City, State}
-  %   {Degree, Field}{09/2010 - 07/2014}
+    {Honors Scholar}{August 2024 -- May 2025}
 \cvheadingend
 
 \section{Research Skills}
@@ -165,133 +147,114 @@
 \vspace{-5pt}
 
 \section{Outreach}
-
 \cvheadingstart
   \cvheading
   {President and Founder, \textit{COD Space Club}}{Glen Ellyn, IL}
-  {\href{https://codspace.club/}{https://codspace.club/}}{1/2025 - 5/2025}
+  {\href{https://codspace.club/}{https://codspace.club/}}{January 2025 -- May 2025}
   \cvitemstart
-  \cvitem{Grew club to $\approx$70 members in 2 semesters}
-  \cvitem{Hosted numerous outreach events including a booth \href{https://www.cod.edu/academics/academic-opportunities/stem/stemcon/}{STEMCON}}
-  \cvitem{Observing nights and field trips to places including Fermilab}
+    \cvitem{Grew the club to $\approx$70 members across two semesters.}
+    \cvitem{Hosted outreach events, including a booth at \href{https://www.cod.edu/academics/academic-opportunities/stem/stemcon/}{STEMCON}.}
+    \cvitem{Led observing nights and organized field trips to Fermilab and other sites.}
   \cvitemend
 
   \cvheading
     {Lead Ambassador, \textit{Stories of Space}}{Glen Ellyn, IL}
-    {\href{https://www.storiesofspace.com/}{https://www.storiesofspace.com/}}{2/2025 - Current}
+    {\href{https://www.storiesofspace.com/}{https://www.storiesofspace.com/}}{February 2025 -- Present}
     \cvitemstart
-    \cvitem{Leading mission 4}
-    \cvitem{Helping coordinate large scale collaborations}
-    \cvitem{Marketed and encouraged college student engagement with space.}
+      \cvitem{Lead Mission~4 planning and execution.}
+      \cvitem{Coordinate large-scale collaborations across partner institutions.}
+      \cvitem{Market and encourage college student engagement with space initiatives.}
     \cvitemend
 
   \cvheading
     {Project Head, \textit{High Altitude Weather Balloon Collaboration}}{Glen Ellyn, IL}
-    {\href{https://sites.google.com/view/stories-of-space-project/}{https://sites.google.com/view/stories-of-space-project/}}{2/2025 - 7/2025}
+    {\href{https://sites.google.com/view/stories-of-space-project/}{https://sites.google.com/view/stories-of-space-project/}}{February 2025 -- July 2025}
     \cvitemstart
-    \cvitem{Helping coordinate large scale collaborations}
-    \cvitem{Marketed and encouraged college student engagement with space.}
-    \cvitem{Currently working in charge of Mission 4}
+      \cvitem{Coordinated large-scale collaborations across student teams.}
+      \cvitem{Marketed and promoted participation in space-related projects.}
+      \cvitem{Led Mission~4 workstream.}
     \cvitemend
 \cvheadingend
 
 \section{Talks}
-  \cvheadingstart
-
+\cvheadingstart
   \cvheading
-    {Student Speaker, \textit{College of Dupage}}
-    {Glen Ellyn, IL}
-    {\href{https://dc.cod.edu/srs/2025/schedule/25/}{COD Library Student Research Symposium}}
-    {5/12/2025}
+    {Student Speaker, \textit{College of DuPage}}{Glen Ellyn, IL}
+    {\href{https://dc.cod.edu/srs/2025/schedule/25/}{COD Library Student Research Symposium}}{May 2025}
     \cvitemstart
-    \cvitem{Presented an in-depth exploration of the processes of mass transfer in binary stars}
+      \cvitem{Presented an in-depth exploration of mass transfer in binary stars.}
     \cvitemend
 
   \cvheading
-    {Guest Speaker, \textit{Northwest Suburban Astronomers}}
-    {Barrington, IL}
-    {\href{https://www.nsaclub.org/}{https://www.nsaclub.org/}}
-    {2/7/2025}
+    {Guest Speaker, \textit{Northwest Suburban Astronomers}}{Barrington, IL}
+    {\href{https://www.nsaclub.org/}{https://www.nsaclub.org/}}{February 2025}
     \cvitemstart
-    \cvitem{Presented an overview of binary star properties, including X-Ray binaries, mass transfer, and stellar evolution}
-    \cvitem{Audience of $\approx$ 50 people.}
+      \cvitem{Presented an overview of binary star properties, including X-ray binaries, mass transfer, and stellar evolution; audience $\approx$50.}
     \cvitemend
-
-  \cvheadingend
+\cvheadingend
 
 \section{Publications}
-  \cvheadingstart
-  \cvheading{Photography}{Glen Ellyn, IL}{Emulsion and Noise}{9/2025}
+\cvheadingstart
+  \cvheading{Photography}{Glen Ellyn, IL}{Emulsion and Noise}{September 2025}
   \cvheading
-    {Mass Transfer in Binary Stars}
-    {Glen Ellyn, IL}
-    {\href{https://dc.cod.edu/srs/2025/schedule/25/}{Digital Commons}}
-    {5/2025}
-  % \cvitemstart
-  % \cvitemend
-  \cvheading{Photography}{Glen Ellyn, IL}{\href{https://prairielightreview.squarespace.com/}{Prairie Light Review}}{5/2025}
-  \cvheadingend
+    {Mass Transfer in Binary Stars}{Glen Ellyn, IL}
+    {\href{https://dc.cod.edu/srs/2025/schedule/25/}{Digital Commons}}{May 2025}
+  \cvheading{Photography}{Glen Ellyn, IL}{\href{https://prairielightreview.squarespace.com/}{Prairie Light Review}}{May 2025}
+\cvheadingend
 
 \section{Press}
-  \cvheadingstart
+\cvheadingstart
   \cvheading{Student Spotlight, \textit{College of DuPage}}
   {Glen Ellyn, IL}
   {\href{https://www.cod.edu/about/stories/students/lipschultz.html}{https://www.cod.edu/about/stories/students/lipschultz.html}}
-  {1/2025}
+  {January 2025}
 
-  \cvheading{\textit{STORIES of Space and College of DuPage students \ldots weather balloon launch}}
+  \cvheading{\textit{STORIES of Space and College of DuPage students \ldots\ weather balloon launch}}
   {}
   {\href{https://www.dailyherald.com/20250326/submitted-content/stories-of-space-and-college-of-dupage-students-advance-space-exploration-with-weather-balloon-launc/}{Daily Herald}}
-  {3/26/25}
-  \cvheadingend
-
+  {March 2025}
+\cvheadingend
 
 \section{Projects}
-
 \cvheadingstart
-\cvheading{Python Module for graphing HR diagrams of POSYDON Datasets}
-{}
-{Independent Project $\diamond$ \href{https://piersonlip.github.io/Posydon_HR_Graphing_Script/}{Example} $\diamond$ \href{https://github.com/PiersonLip/Posydon_HR_Graphing_Script}{GitHub}}
-{5/2025 - Current}
-\cvitemstart
-  \cvitem{Allows user to easily create elegant and publishing ready graphs in either Matplotlib or Bokeh}
-  \cvitem{Creates HTML viewing files to allow the user to quickly understand a dataset (\textit{see \href{https://piersonlip.github.io/Posydon_HR_Graphing_Script/}{link}})}
-  \cvitem{Written for an out-of-the-box solution while still allowing deep configuration}
-\cvitemend
+  \cvheading{Python Module for Graphing HR Diagrams of POSYDON Datasets}
+  {}
+  {Independent Project $\diamond$ \href{https://piersonlip.github.io/Posydon_HR_Graphing_Script/}{Example} $\diamond$ \href{https://github.com/PiersonLip/Posydon_HR_Graphing_Script}{GitHub}}
+  {May 2025 -- Present}
+  \cvitemstart
+    \cvitem{Enables rapid creation of publication-ready HR diagrams in Matplotlib or Bokeh.}
+    \cvitem{Generates interactive HTML viewers for quick dataset exploration (\textit{see link}).}
+    \cvitem{Balances out-of-the-box defaults with deep configuration options.}
+  \cvitemend
 
-
-\cvheading{Custom Astrophotography Mounting Rig}
-{}
-{Independent Project $\diamond$ \href{https://www.piersonl.com/astrophotography/equipment}{Photos}}
-{5/2025 - Current}
-\cvitemstart
-\cvitem{Custom designed in CAD software (Fusion360)}
-\cvitem{3D printed in high-strength materials to allow for long-term use}
-\cvitemend
+  \cvheading{Custom Astrophotography Mounting Rig}
+  {}
+  {Independent Project $\diamond$ \href{https://www.piersonl.com/astrophotography/equipment}{Photos}}
+  {May 2025 -- Present}
+  \cvitemstart
+    \cvitem{Designed components in Fusion~360 and iterated via CAD.}
+    \cvitem{3D-printed parts in high-strength materials for durable, long-term use.}
+  \cvitemend
 \cvheadingend
 
 \section{Art}
-
 \cvheadingstart
+  \cvheading{Photography}
+  {}
+  {Independent and Academic $\diamond$ \href{https://www.piersonl.com/photographs}{Photographs}}
+  {December 2024 -- Present}
+  \cvitemstart
+    \cvitem{Operate Sony and Canon DSLR workflows; multiple photographs published.}
+  \cvitemend
 
-\cvheading{Photography}
-{}
-{Independent and Academic $\diamond$ \href{https://www.piersonl.com/photographs}{Photographs}}
-{12/2024 - Current}
-\cvitemstart
-\cvitem{Experienced with Sony and Canon DSLRs}
-\cvitem{Multiple photographs published}
-\cvitemend
-
-\cvheading{Astrophotography}
-{}
-{Independent $\diamond$ \href{https://www.piersonl.com/astrophotography}{Photographs}}
-{5/2024 - Current}
-\cvitemstart
-\cvitem{Custom assembled rig for taking pictures of faint deep sky objects}
-\cvitem{Experienced with various AP tools, including NINA, PixInsight, BXT, Siril, PHD2, and more}
-\cvitemend
-
+  \cvheading{Astrophotography}
+  {}
+  {Independent $\diamond$ \href{https://www.piersonl.com/astrophotography}{Photographs}}
+  {May 2024 -- Present}
+  \cvitemstart
+    \cvitem{Assembled a custom rig for faint deep-sky imaging.}
+    \cvitem{Use tools including NINA, PixInsight, BXT, Siril, and PHD2.}
+  \cvitemend
 \cvheadingend
 
 \end{document}
